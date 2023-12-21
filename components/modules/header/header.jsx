@@ -1,10 +1,12 @@
 import "swiper/css";
 import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Navbar from "../navbar/navbar";
 
 export default function Header() {
   return (
-    <div>
+    <div className="relative">
+      <Navbar />
       <Swiper
         navigation={true}
         modules={[Navigation]}
@@ -14,50 +16,37 @@ export default function Header() {
         <SwiperSlide
           style={{
             backgroundImage:
-              'url("https://assets.architecturaldigest.in/photos/60083ed208ae763b9ae8542d/16:9/w_2560%2Cc_limit/fermented-coffee-beverage-brew-1366x768.jpg")',
+              'url("https://www.gcrmag.com/wp-content/uploads/2022/05/AdobeStock_92994437-scaled.jpeg")',
           }}
-          className="bg-no-repeat text-lg flex items-center justify-center bg-cover"
+          className="bg-no-repeat bg-cover z-10"
         >
-          <div className="flex flex-col justify-center items-center text-slate-100 text-2xl font-bold leading-10">
+          {/* <div className="flex flex-col  items-center justify-center my-auto text-black text-2xl font-bold ">
             <p className="text-yellow-600">We Have Been Serving</p>
             <h2 className="text-7xl">COFFEE</h2>
             <div>*SINCE 1950*</div>
-          </div>
+          </div> */}
         </SwiperSlide>
         <SwiperSlide
           style={{
             backgroundImage:
-              'url("https://images.immediate.co.uk/production/volatile/sites/2/2021/11/Caramel-iced-coffee-f73307b.png?resize=960%2C503")',
+              'url("https://www.thespruceeats.com/thmb/0CK65lVOSHILEZXSh1dVJ_Hl4Hc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/how-to-make-caffe-latte-765372-hero-01-2417e49c4a9c4789b3abdd36885f06ab.jpg")',
           }}
           className="bg-no-repeat text-lg flex items-center justify-center bg-cover"
-        >
-          <div className="flex flex-col justify-center items-center text-slate-100 text-7xl">
-            slide 2
-          </div>
-        </SwiperSlide>
+        ></SwiperSlide>
         <SwiperSlide
           style={{
             backgroundImage:
               'url("https://media-cdn.tripadvisor.com/media/photo-m/1280/17/2c/f0/92/hot-number-coffee-croissant.jpg")',
           }}
           className="bg-no-repeat text-lg flex items-center justify-center bg-cover"
-        >
-          <div className="flex flex-col justify-center items-center text-slate-100 text-7xl">
-            slide 3
-          </div>
-        </SwiperSlide>
+        ></SwiperSlide>
         <SwiperSlide
           style={{
             backgroundImage:
               'url("https://d2dyh47stel7w4.cloudfront.net/Pictures/1024x536/4/1/7/250417_gettyimages1257462020_638621_crop.jpg")',
           }}
           className="bg-no-repeat text-lg flex items-center justify-center bg-cover"
-        >
-          <div className="flex flex-col justify-center items-center text-orange-950 text-7xl">
-            slide 4
-          </div>
-        </SwiperSlide>
-        ...
+        ></SwiperSlide>
       </Swiper>
     </div>
   );
