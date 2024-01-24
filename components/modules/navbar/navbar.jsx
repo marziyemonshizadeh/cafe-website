@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Navbar() {
   return (
     <div className="absolute z-50 w-full">
-      <div className=" p-2 end-0 flex items-center md:justify-between justify-center py-2  text-black overflow-hidden">
+      <div className=" p-2 end-0 flex items-center justify-between py-2  text-black overflow-hidden">
         <div className="text-2xl font-extrabold">
           {/* NEXT-COFFEE */}
           <img
@@ -12,23 +12,20 @@ export default function Navbar() {
             className="w-12 h-12"
           />
         </div>
-        <div className="font-bold  grid grid-cols-6  md:gap-0 gap-6 ">
-          <Link href="#" className="linksStyle">
+        <div className="font-bold  grid grid-cols-5  md:gap-0 gap-6 ">
+          <Link href="/" className="linksStyle">
             Home
           </Link>
-          <Link href="#" className="linksStyle">
+          <Link href="aboutUs" className="linksStyle">
             About
           </Link>
-          <Link href="#" className="linksStyle">
+          <Link href="Service" className="linksStyle">
             Service
           </Link>
-          <Link href="#" className="linksStyle">
+          <Link href="menu" className="linksStyle">
             Menu
           </Link>
-          <Link href="#" className="linksStyle">
-            Pages
-          </Link>
-          <Link href="#" className="linksStyle">
+          <Link href="contact" className="linksStyle">
             Contact
           </Link>
         </div>
