@@ -14,19 +14,19 @@ export default function Navbar() {
         </div>
         <div className="font-bold  grid grid-cols-5  md:gap-0 gap-6 ">
           <Link href="/" className="linksStyle">
-            Home
+            Home1
           </Link>
           <Link href="aboutUs" className="linksStyle">
-            About
+            About1
           </Link>
           <Link href="Service" className="linksStyle">
-            Service
+            Service1
           </Link>
           <Link href="menu" className="linksStyle">
-            Menu
+            Menu1
           </Link>
           <Link href="contact" className="linksStyle">
-            Contact
+            Contact1
           </Link>
         </div>
       </div>
